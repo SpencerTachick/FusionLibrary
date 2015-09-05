@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Fusion Library</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="fusion_search_button">Find Fusions</string>
     <string name="action_settings">Settings</string>
 </resources>
