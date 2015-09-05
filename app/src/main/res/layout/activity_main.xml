@@ -18,7 +18,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/fusionText"
+        android:id="@+id/genesEntered"
         android:layout_above="@+id/fusionSearchButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"

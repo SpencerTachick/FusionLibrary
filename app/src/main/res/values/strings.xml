@@ -3,4 +3,7 @@
 
     <string name="fusion_search_button">Find Fusions</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_fusion_list">FusionList</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
