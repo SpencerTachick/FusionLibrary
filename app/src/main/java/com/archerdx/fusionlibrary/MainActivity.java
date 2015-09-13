@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
+import android.util.Log;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "errorMessages";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button fusionSearchButton = (Button)findViewById(R.id.fusionSearchButton);
+
+        final QuiverDBHandler penis = new QuiverDBHandler(this);
 
         //Sends the fusion entered to the FusionList.java class upon clicking the Find Fusions button
         fusionSearchButton.setOnClickListener(
@@ -27,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
                     final EditText genesEntered = (EditText) findViewById(R.id.genesEntered);
                     String list_of_genes = genesEntered.getText().toString();
-
-                    goToFusionList.putExtra("genes", list_of_genes);
+                    Log.i(TAG, list_of_genes);
+                    goToFusionList.putExtra("genes", penis.getJoke(list_of_genes));
                     startActivity(goToFusionList);
 
                 }
